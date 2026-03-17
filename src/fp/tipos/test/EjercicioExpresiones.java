@@ -26,38 +26,38 @@ public class EjercicioExpresiones {
 	    	
 	    	System.out.println("Juan tiene más de 18 años:");
 	    	//TODO Sustituye null por la expresión adecuada
-	    	res=null;
-	    	System.out.println(res);
+	    	boolean ej1 = juan.getEdad()>18;
+	    	System.out.println(ej1);
 	    	
 	    	System.out.println("Maria tiene licencia de conducir:");
 	    	//TODO Sustituye null por la expresión adecuada
-	    	res=null;
-	    	System.out.println(res);
+	    	boolean ej2 = maria.tieneLicencia().equals(true);
+	    	System.out.println(ej2);
 
 	    	System.out.println("Juan ha visitado Chile:");
 	    	//TODO Sustituye null por la expresión adecuada
-	    	res=null;
-	    	System.out.println(res);
+	    	boolean ej3 = juan.getPaisesVisitados().contains("Chile");
+	    	System.out.println(ej3);
 
 	    	System.out.println("A María le gustan el cine y la música:");
 	    	//TODO Sustituye null por la expresión adecuada
-	    	res=null;
-	    	System.out.println(res);
+	    	boolean ej5 = maria.getHobbies().contains("cine")&& maria.getHobbies().contains("música");
+	    	System.out.println(ej5);
 
 	    	System.out.println("'El Principito' es el último libro que ha leído Maria:");
 	    	//TODO Sustituye null por la expresión adecuada
-	    	res=null;
-	    	System.out.println(res);
+	    	boolean ej6 = maria.getLibrosLeidos().get(maria.getLibrosLeidos().size()-1).equals("El Principito");
+	    	System.out.println(ej6);
 
 	    	System.out.println("Ni Juan ni Pedro tienen licencia de conducir:");
 	    	//TODO Sustituye null por la expresión adecuada
-	    	res=null;
-	    	System.out.println(res);
+	    	boolean ej7 = juan.tieneLicencia().equals(false) && pedro.getLibrosLeidos().equals(false);
+	    	System.out.println(ej7);
 
 	    	System.out.println("Maria ha leído al menos 2 libros:");
 	    	//TODO Sustituye null por la expresión adecuada
-	    	res=null;
-	    	System.out.println(res);
+	    	boolean ej8 = maria.getLibrosLeidos().size()>=2;
+	    	System.out.println(ej8);
 
 	    	System.out.println("María no ha visitado México, pero Pedro sí:");
 	    	//TODO Sustituye null por la expresión adecuada
